@@ -1,0 +1,44 @@
+.Menu{
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    transition: 0.5s all;
+}
+
+.Menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+
+}
+
+.Menu li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.Menu li:hover{
+    transition: 0.5s all;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.Menu a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+
+.barritas{
+    width: 90%;
+    border-radius: 50%;
+}

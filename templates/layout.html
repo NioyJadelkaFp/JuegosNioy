@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+    <title>{{ TituloName }} - Tu Zona de Juegos Seguros</title>
+</head>
+<body>
+
+     <nav class="Menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Fnaf'S</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+
+    <hr class="barritas">
+
+    <main>
+        {% block contend%}
+        {% endblock%}
+    </main>
+    
+</body>
+</html>
