@@ -1,0 +1,41 @@
+{%extends 'layout.html'%}
+{% block contend%}
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fnaf.css')}}">
+</head>
+<section class="Juegos">
+   
+    {% for item in items %}
+    <section class="CardContenido">
+        <section class="Info">
+            <section class="Title">
+                <header>
+                    {{ item.title }}
+                </header>
+                <article>
+                    {{ item.username }}
+                </article>
+            </section>
+            <hr class="hrs" />
+            <section class="Descripcion">
+                <p>
+                    {{ item.description }}
+                </p>
+            </section>
+        </section>
+        <section class="Web">
+            <div class="Links">
+                <p>Links de descargas</p>
+                <a href="{{ item.Pc_link }}" target="_blank">Pc</a>
+                <a href="{{ item.Android_link }}" target="_blank">Android</a>
+            </div>
+            <img 
+                class="WebInfo" 
+                src="{{ item.image_src }}" 
+                alt="{{ item.title }}">
+        </section>
+    </section>
+    {% endfor %}
+    
+</section>
+{% endblock%}
