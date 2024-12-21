@@ -12,6 +12,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 main{
@@ -30,6 +31,91 @@ main{
 }
 
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+.footer p{
+    text-wrap: wrap;
+    margin-top: 10px;
+}
+.Informacion{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    margin: 25px;
+    color: #000000;
+    margin-top: -10px;
+}
+
+
+.Info{
+    display: grid;
+    width: 200px;
+    margin: 20px;
+    justify-items: start;
+    
+}
+.proxi{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Info span{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Info a{
+    padding-left: 7px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: #838383;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+.proxi a{
+    padding-left: 7px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: #c4c4c4;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: all 5s;
+}
+
+.Info a:hover{
+    animation: Saltito 1s infinite;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    color: #0f0f0f;
+}
+.proxi a:hover{
+    animation: Saltito 1s infinite;
+    transition: all 0.5s ease-in-out;
+    color: #0f0f0f;
+}
+
+.Logito{
+    margin-top: 20px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+
 @media screen and (max-width: 768px) {
    body{
     width: 95%;
@@ -43,7 +129,13 @@ main{
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    gap: 35px;
    }
+   .footer{
+        height: auto;
+        margin-top: 0;
+        overflow: hidden;
+    }
 }
 
 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Card.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/alerta.css')}}">
     <title>{{ TituloName }} - Tu Zona de Juegos Seguros</title>
 </head>
 <body>
@@ -23,6 +25,20 @@
         {% block contend%}
         {% endblock%}
     </main>
+
+    <footer class="footer">
+
+        <hr>
+        <section class="Informacion">
+            <p>
+                <img src="{{ url_for('static', filename='Img/JzHd.png')}}" alt="Logo De La Web" class="Logito"> Esta página web ha sido creada para facilitar la descarga de juegos antiguos o difíciles de encontrar.
+            </p>
+            <p>
+                Nuestro objetivo es ofrecer una plataforma donde los usuarios puedan acceder fácilmente a juegos retro y exclusivos que no están disponibles en otros lugares.
+            </p>
+        </section>
+        <hr>
+    </footer>
     
 </body>
 </html>

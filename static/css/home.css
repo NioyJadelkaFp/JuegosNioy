@@ -1,0 +1,36 @@
+main{
+    height: 100vh;
+}
+
+.Comunicados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Comunidado-info{
+    width: 90%;
+    margin-bottom: 25px;
+}
+.Comunicados span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Comunicados hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Fecha{
+    font-size: 6;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

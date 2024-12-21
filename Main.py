@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def Home():
     return rutas.Home("Home")
+
 @app.route('/fnaf')
 def Fnaf():
     return rutas.Fnaf("Fnaf")

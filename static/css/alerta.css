@@ -1,0 +1,21 @@
+.alerta {
+    padding: 20px;
+    background-color: #f44336; /* Rojo */
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.alerta.success {
+    background-color: #4CAF50; /* Verde */
+}
+
+.alerta.warning {
+    background-color: #ff9800; /* Naranja */
+}
+
+.alerta.info {
+    background-color: #2196F3; /* Azul */
+}
